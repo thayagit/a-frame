@@ -5,13 +5,18 @@
   </head>
   <body>
     <a-scene>
+	
+        <a-assets>
+            <img id="thumb001" crossOrigin="anonymous" src="./aframe.jpg">
+        </a-assets>
+		
       <a-box position="-1 -0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 -1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="3 -0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-sky src="https://aframe.io/aframe/examples/boilerplate/panorama/puydesancy.jpg"></a-sky>
       <a-text value="Sample desu." width="6" position="-2.5 -0.25 -1.5" rotation="0 15 0"></a-text>
 
-      <a-link href="https://aframe.io/" title="Go A-Frame" image="./aframe.jpg" position="0 1.2 -4"></a-link>
+      <a-link href="https://aframe.io/" title="Go A-Frame" image="#thumb001" position="0 1.2 -4"></a-link>
 
       <a-entity camera look-controls wasd-controls>
         <a-entity cursor="fuse: true;"
